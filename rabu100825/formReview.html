@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="nis">NIS</label><br>
+        <input type="text"><br>
+        <label for="namaLengkap">Nama Lengkap</label><br>
+        <input type="text"><br><br>
+
+        <table>
+            <tr>
+                <td><label for="nis">NOS</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="namaLengkap">Numi</label></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <br>
+
+        <label for="tanggalLahir">Tanggal Lahir</label>
+        <input type="date"><br>
+        <label for="tanggal">Tanggal</label>
+        <select name="tanggalLahir" id="tanggalLahir">
+            <option value="">Hari</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <label for="bulan">Bulan</label>
+        <select name="bulan" id="bulan">
+            <option value="">Bulan</option>
+            <option value="1">Januari</option>
+            <option value="2">Februari</option>
+            <option value="3">Maret</option>
+        </select>
+
+        <br><br>
+        <h3>Radio</h3>
+        <label for="jenis_kelamin">Jenis Kelamin</label><br>
+        <input type="radio" name="jenis_kelamin" id="lakilaki"> Laki-laki <br>
+        <input type="radio" name="jenis_kelamin" id="perempuan"> Perempuan
+
+        <h3>checkbox</h3>
+        <label for="hobi">Hobi</label>
+        <input type="checkbox"> Membaca
+
+        <h3>File</h3>
+        <label for="upload">Upload Foto</label>
+        <input type="file">
+
+        <h3>Textarea</h3>
+        <label for="alamat">Alamat Lengkap</label><br>
+        <textarea name="alamat" id="alamat"></textarea>
+        <br>
+        <input type="submit" value="Kirim">
+        
+        
+    </form>
+</body>
+</html>

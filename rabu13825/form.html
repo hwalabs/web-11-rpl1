@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="nama" style="font-size: 50px;">Nama Lengkap</label><br />
+      <input type="text" /> <br />
+
+      <label for="password">Password</label><br />
+      <input type="password" /><br /><br />
+
+      <table>
+        <tr>
+          <td>
+            <label for="nama">Nama Lengkap</label>
+          </td>
+          <td><input type="text" /> <br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password</label>
+          </td>
+          <td>
+            <input type="password" />
+          </td>
+        </tr>
+      </table>
+
+      <h3>--Radio--</h3>
+      <label for="jenisKelamin">Jenis Kelamin</label><br>
+      <input type="radio" name="jenis_kelamin" value="lakilaki"> Laki-laki <br>
+      <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+
+      <h3>--Checkbox--</h3>
+      <label for="hobi">Hobi:</label><br>
+      <input type="checkbox"> Beklen <br>
+      <input type="checkbox"> Mancing
+
+      <h3>--Dropdown--</h3>
+      <label for="jurusan">Jurusan</label>
+      <select name="jurusan" id="jurusan">
+        <option value="rpl">Rekayasa Perangkat Lunak</option>
+        <option value="tbsm">Teknik Bisnis Sepeda Motor</option>
+        <option value="atph">Agribisnis Tanaman Pangan dan Hortikultura</option>
+      </select>
+      <br><br>
+      <textarea name="alamat" id="alamat"></textarea>
+      <input type="submit"  name="simpan" value="SIMPAN">
+    </form>
+  </body>
+</html>
