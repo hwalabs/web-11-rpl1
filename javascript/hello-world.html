@@ -1,32 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belajar Javascript</title>
-</head>
-<body>
+  </head>
+  <body>
     <h3 id="hello"></h3>
     <p id="nama"></p>
+    <p id="umur"></p>
 
     <p>ARITMATIKA</p>
     <p id="tambah"></p>
+    <p id="demo">uye?</p>
+    <button onclick="sapa()">klik</button>
+    <p id="has"></p>
+
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <button onclick="proses()">Hasil</button>
+    <p>Hasil <span id="hasilin"></span></p>
     <script>
-        // document.writeln("Hello World")
+      // document.writeln("Hello World")
 
-        document.getElementById('hello').innerHTML="Hello World"
-        let nama="Usro";
-        nama="Ujang";
+      document.getElementById("hello").innerHTML = "Hello World";
+      let nama = "Usro";
+      nama = "Ujang";
 
-        document.getElementById('nama').innerHTML="Unyil " + nama;
+      const umur = 30
+      umur = 35
 
-        //penjumlahan
-        let angka1 = 5
-        let angka2 = 9
-        let hasil = angka1 + angka2
+      document.getElementById("nama").innerHTML = "Unyil " + nama;
+      document.getElementById("umur").innerHTML = "Umur " + umur;
 
-        document.getElementById('tambah').innerHTML=angka1 + "+" + angka2 + "=" + hasil;
+      //penjumlahan
+      let angka1 = 5;
+      let angka2 = 9;
+      let hasil = angka1 + angka2;
 
+      document.getElementById("tambah").innerHTML =
+        angka1 + "+" + angka2 + "=" + hasil;
+
+        // const a = 3;
+        // a = 5
+
+        // document.getElementById('demo').innerHTML="hasil" + a;
+
+        function sapa(){
+            document.getElementById('has').innerHTML="uye"
+        }
+
+        function tambah(a,b) {
+            return a+b
+        }
+
+        function proses(){
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById('b').value);
+
+            let hasil = tambah(a,b)
+
+            document.getElementById('hasilin').innerHTML=hasil
+        }
     </script>
-</body>
+  </body>
 </html>

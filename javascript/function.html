@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Halo <br>
+    <button onclick="sapa()">Klik aku dong!</button>
+    <p id="teks"></p>
+
+    <h3>KALKULATOR</h3>
+    <input type="number" name="" id="a" placeholder="masukan angka ke 1"> +
+    <input type="number" name="" id="b" placeholder="masukan angka ke 2">
+    <button onclick="proses()">hasil</button>
+    <p>Hasil : <span id="hasil"></span></p>
+    <script>
+        //tanpa parameter
+        function sapa(){
+            // document.writeln('Hi!')
+            // document.writeln('Kamu!')
+            document.getElementById('teks').innerHTML="Aw!"
+        }
+
+        // dengan parameter
+        function tambah(a,b) {
+            return a+b
+        }
+
+        function proses() {
+            let angka1 = Number(document.getElementById('a').value); //3
+            let angka2 = Number(document.getElementById('b').value); //4
+
+            let hasil = tambah(angka1,angka2)
+
+            document.getElementById('hasil').innerHTML=hasil
+        }
+    </script>
+</body>
+</html>
