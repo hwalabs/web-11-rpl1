@@ -15,6 +15,11 @@
     <input type="number" name="" id="b" placeholder="masukan angka ke 2">
     <button onclick="proses()">hasil</button>
     <p>Hasil : <span id="hasil"></span></p>
+    
+    <h3>Luas Lingkaran</h3>
+    <input type="number" id="jari2">
+    <button onclick="prosesLuasLingkaran()">Hasil Luas</button>
+    <p>Luas Lingkaran = <span id="luas"></span></p>
     <script>
         //tanpa parameter
         function sapa(){
@@ -35,6 +40,20 @@
             let hasil = tambah(angka1,angka2)
 
             document.getElementById('hasil').innerHTML=hasil
+        }
+
+        function luasLingkaran(r){
+            const pi = 3.14
+            let hasil = pi * r * r
+            return hasil
+        }
+
+        function prosesLuasLingkaran() {
+            let r = document.getElementById('jari2').value
+
+            let hasil = luasLingkaran(r)
+
+            document.getElementById('luas').innerHTML=hasil
         }
     </script>
 </body>
